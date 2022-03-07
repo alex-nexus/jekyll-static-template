@@ -5,13 +5,7 @@
 {%- include snippets/get-locale-string.html key='READMORE' -%}
 {%- assign _locale_readmore = __return -%}
 
-{%- assign _sorted_list = include.articles -%}
-{%- if include.group_by == 'year' -%}
-  {%- assign _sorted_list = _sorted_list | sort: 'date' -%}
-{%- endif -%}
-{%- if include.reverse -%}
-  {%- assign _sorted_list = _sorted_list | reverse -%}
-{%- endif -%}
+{%- assign _sorted_list = include.articles | reverse -%}
 
 {%- if include.type == 'item' -%}
 <div class="article-list items items--divided">
@@ -24,7 +18,6 @@
   <div class="article-list grid grid--p-3">
   {%- endif -%}
 {%- endif -%}
-
   {%- for _article in _sorted_list -%}
 
     {%- include snippets/prepend-baseurl.html path=_article.url -%}
@@ -102,7 +95,7 @@
       <li class="item" itemscope itemtype="http://schema.org/BlogPosting" data-tags="{{ _tags }}">
         <div class="item__content">
           {%- if include.show_info -%}
-            <span class="item__meta">{{ _article.date | date: __return }}</span>
+            <!-- <span class="item__meta">{{ _article.date | date: __return }}</span> -->
           {%- endif -%}
           <a itemprop="headline" class="item__header" href="{{ _article_url }}">{{ _article.title }}</a></div>
       </li>
