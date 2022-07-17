@@ -16,14 +16,14 @@ echo Deploy
 # cp index.html index.html.backup
 # gzip -9 index.html
 
-s3-website create brothersouchan.org
+gsutil mkdir gs://brothersouchan.org
 
 bundle exec jekyll build # --watch
 
-cp .s3-website.json _site/
-cd _site
-s3-website deploy .
-cd ..
+# gsutil cp -R _site gs://brothersouchan.org
+gsutil rsync -R _site gs://brothersouchan.org
+gsutil iam ch allUsers:objectViewer gs://brothersouchan.org
+gsutil web set -m index.html -e 404.html gs://brothersouchan.org
 
 # roll back
 # rm index.html.gz
