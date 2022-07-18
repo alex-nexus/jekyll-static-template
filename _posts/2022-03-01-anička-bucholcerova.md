@@ -1,8 +1,12 @@
 ---
 layout: article
-author: Anička Bucholcerova
-location: Bílovice nad Svitavou, Czech Republic
+author: 劉增榮 弟兄
 tags: saints
 full_width: false
 ---
-Brother Nat used to come and see us when we were in college. Irenka Ř., Jana H., Daniel Ř, and I used to meet with him. We would read the Bible and something from the ministry together. It was very nice that Brother Nat personally took care of us in such a way. Whenever I had concerns, he would encourage me with this verse: “Do not let your heart be troubled.” While traveling within the United States, he and his whole family took us on trips to the national parks in California. Sister Wanchi was amazing at the Bible camps in Slovakia, teaching the children verses and making fun activities and pictures with the children.
+每當身旁一位親近的老人家過世，我的心情猶如自己的家人永遠離開我們， 非常難過;因為再也看不到吳師母慈祥的面容，聽不到溫柔的鼓勵了。
+特別珍惜我們兩老小曾經相處過的日子，有歡笑、有喜樂、有滿足;如今 吳師母安息主懷，回想您曾經給我鼓勵的私房話，真的可以讓我開心一整天， 也讓我喜樂洋溢、恩典滿滿。我會永遠記住您和我說過每一句私房話，藉這些 鼓勵的話讓我動力十足，信心滿滿過好每一天屬靈的生活。
+回想您多年來陪我們慢慢長大，我們也陪伴您慢慢變老，晚年時還能夠牽 著您那溫暖的小手，傾聽輕聲細語、噓寒問暖，幸福有多少。
+昨晚吳師母息了地上的勞苦，雖然震驚但也不意外，因為生命氣息都在神 手中。總之，您那美好的仗已經打過了，當跑的賽程已經跑盡了，今天安睡主 懷那屬天更美的家鄉，到那日我們還要再相見。
+您一生都經歷教會甜美的生活，時時刻刻都關心弟兄姊妹;此時我們送您 一句話:「落花不是無情物，化作春泥更護花」，您的精神將與我們同在。
+箴言說「才德的婦人誰能得著呢 ?您的價值遠勝過珍珠，惟獨你超過一 切」。吳師母您一路好走，也求主安慰、祝福壽師母一家人!感謝主!

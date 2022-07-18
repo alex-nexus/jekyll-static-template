@@ -1,41 +1,25 @@
-title   : Nathaniel Kong Memorial
-description: A Lover of Christ and the Church and A Loving Shepherd
-full_name: Nathaniel Kong
+title   : 吳梁蘭英 師母
+description: 婆婆
+full_name: 吳梁蘭英 
 date_range: October 14, 1962 - February 28, 2022
 hero_background_color: 004A80
-headline: Lover of Christ and the Church and a loving shepherd
+headline: 追思
 navigation:
   - titles:
       en: Biography
     url: /biography.html
-  - titles:
-      en: Meeting Slides
-    url: /meeting.html
   - titles:
       en: Family
     url: /archive.html?tag=family
   - titles:
       en: Saints
     url: /archive.html?tag=saints
-
-  - titles:
-      en: Videos
-    url: /videos.html
   - titles:
       en: Photos
     url: /photos.html
-
-memorial_meeing:
-    datetime: March 19th 10am-12pm
-    venue: Mack Powell Event Center
-    address: 2003 Howe Ave, Sacramento, CA 95825
-
+  - titles:
+      en: Videos
+    url: /videos.html  
 biography:
-  title: A Short Biography of Nathaniel Kong
+  title: 吳梁蘭英
   subtitle: “A Life Outpoured”
-
-authors:
-  Wanchi:
-    name: Wanchi Kong
-  Joseph:
-    name: Joseph Kong

@@ -1,24 +1,37 @@
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
-{%- include snippets/get-article-title.html article=page -%}
-<title>{%- if __return -%}{{ __return }} - {{ site.data.config.title }}{%- else -%}{{ site.data.config.title }}{%- endif -%}</title>
+    {%- include snippets/get-article-title.html article=page -%}
+    <title>{%- if __return -%}{{ __return }} - {{ site.data.config.title }}{%- else -%}{{ site.data.config.title }}{%- endif -%}</title>
 
-<meta name="description" content="{%- if page.excerpt -%}{{ page.excerpt | strip_html | strip_newlines | strip | truncate: 160 }}{%- else -%}{{ site.data.config.description }}{%- endif -%}">
-<link rel="canonical" href="{%- include snippets/page-url.html -%}">
+    <meta name="description" content="{%- if page.excerpt -%}{{ page.excerpt | strip_html | strip_newlines | strip | truncate: 160 }}{%- else -%}{{ site.data.config.description }}{%- endif -%}">
+    <link rel="canonical" href="{%- include snippets/page-url.html -%}">
 
-{%- assign _paths_rss = site.paths.rss | default: site.data.variables.default.paths.rss -%}
-{%- include snippets/get-nav-url.html path=_paths_rss -%}
-<link rel="alternate" type="application/rss+xml" title="{{ site.data.config.title }}" href="{{ __return }}">
+    {%- assign _paths_rss = site.paths.rss | default: site.data.variables.default.paths.rss -%}
+    {%- include snippets/get-nav-url.html path=_paths_rss -%}
+    <link rel="alternate" type="application/rss+xml" title="{{ site.data.config.title }}" href="{{ __return }}">
 
-{%- include head/favicon.html -%}
+    {%- include head/favicon.html -%}
 
-{%- include snippets/prepend-baseurl.html path='/assets/css/main.css' -%}
-<link rel="stylesheet" href="{{ __return }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-{%- include snippets/get-sources.html -%}
-{%- assign _sources = __return -%}
-<link rel="stylesheet" href="{{ _sources.font_awesome }}" >
+    {%- include snippets/prepend-baseurl.html path='/assets/css/main.css' -%}
+    <link rel="stylesheet" href="{{ __return }}">
 
-{%- include head/custom.html -%}
+    {%- include snippets/get-sources.html -%}
+    {%- assign _sources = __return -%}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css" integrity="sha512-xX2rYBFJSj86W54Fyv1de80DWBq7zYLn2z0I9bIhQG+rxIF6XVJUpdGnsNHWRa6AvP89vtFupEPDP8eZAtu9qA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    {%- include head/custom.html -%}
+
+    {%- include scripts/variables.html -%}
+    {%- include analytics.html -%}
+
+    <script>
+        {%- include scripts/utils/utils.js -%}
+        {%- include scripts/lib/throttle.js -%}
+        {%- include scripts/lib/lazyload.js -%}
+      </script>
+</head>

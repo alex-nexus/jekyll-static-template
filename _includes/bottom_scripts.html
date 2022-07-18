@@ -1,0 +1,22 @@
+<script>
+  {%- include scripts/lib/scroll-to.js -%}
+  {%- include scripts/lib/affix.js -%}
+  {%- include scripts/lib/toc.js -%}
+  {%- if _lightbox == true -%}
+    {%- include scripts/lib/gallery.js -%}
+    {%- include scripts/components/lightbox.js -%}
+  {%- endif -%}
+  {%- include scripts/page.js -%}
+</script>
+
+<script>
+  /* toc must before affix, since affix need to konw toc' height. */
+  {%- if page.aside.toc -%}{%- include scripts/aside/toc.js -%}{%- endif -%}
+  {%- include scripts/aside/affix.js -%}
+</script>
+
+<script>
+    {%- include scripts/common.js -%}
+  </script>
+  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

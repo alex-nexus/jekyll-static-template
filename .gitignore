@@ -22,6 +22,9 @@ yarn.lock
 package-lock.json
 Gemfile.lock
 
+assets/photos/
+assets/videos/
+
 _site/
 .jekyll-metadata
 .jekyll-cache/
